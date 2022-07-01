@@ -141,3 +141,20 @@
     border-radius: 50%;
   }
 }
+.digital-time {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rebeccapurple;
+  color: #fff;
+  // width: 400px;
+  text-align: center;
+
+  .clock-digital {
+    font-size: 3rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
