@@ -14,11 +14,3 @@ setInterval(() => {
   min.style.transform = `rotateZ(${currentMin}deg)`;
   sec.style.transform = `rotateZ(${currentSec}deg)`;
 }, 1000);
-
-setInterval(() => {
-  const clock = document.querySelector(".clock");
-  let date = new Date();
-  let hour = date.getHours();
-  let minute = date.getMinutes();
-  let seconds = date.getSeconds();
-}, 1000);
