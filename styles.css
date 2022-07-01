@@ -122,6 +122,10 @@
   left: 25%;
 }
 
+.page-container .clock-outer .clock .numbers {
+  font-weight: bold;
+}
+
 .page-container .seconds {
   height: 100px;
   width: 3px;

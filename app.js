@@ -5,12 +5,20 @@ const deg = 6;
 
 setInterval(() => {
   let currentDay = new Date();
-  let currentHour = currentDay.getHours();
-  console.log(currentHour);
+  let currentHour = currentDay.getHours() * 30;
+  // console.log(currentHour);
   let currentMin = currentDay.getMinutes() * deg;
   let currentSec = currentDay.getSeconds() * deg;
 
   hour.style.transform = `rotateZ(${currentHour + currentMin / 12} deg)`;
   min.style.transform = `rotateZ(${currentMin}deg)`;
   sec.style.transform = `rotateZ(${currentSec}deg)`;
+}, 1000);
+
+setInterval(() => {
+  const clock = document.querySelector(".clock");
+  let date = new Date();
+  let hour = date.getHours();
+  let minute = date.getMinutes();
+  let seconds = date.getSeconds();
 }, 1000);
