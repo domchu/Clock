@@ -164,3 +164,21 @@
     align-items: center;
   }
 }
+.date {
+  border: 1px solid;
+  width: 400px;
+  height: 100px;
+  font-weight: bold;
+  border-radius: 8px;
+  display: flex;
+  margin-top: 4rem;
+  justify-content: space-around;
+  font-size: 2rem;
+  color: #fff;
+  background-color: rebeccapurple;
+  align-items: center;
+
+  .month {
+    // margin: 0 2rem;
+  }
+}
