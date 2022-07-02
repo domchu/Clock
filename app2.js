@@ -9,6 +9,7 @@ setInterval(() => {
   let day = date.getDay();
   let month = date.getMonth();
   let year = date.getFullYear();
+  console.log(month);
 
   am_pm = hour >= 12 ? "PM" : "AM";
 
@@ -52,7 +53,7 @@ setInterval(() => {
     default:
       break;
   }
-  switch (date.getFullYear()) {
+  switch (date.getMonth()) {
     case 0:
       month = "January";
       break;
@@ -89,13 +90,12 @@ setInterval(() => {
     case 11:
       month = "December";
       break;
-
     default:
       break;
   }
-  // console.log(month);`
+  // console.log(month);
 
-  clock.innerHTML = `${hour} : ${minute} : ${seconds} ${am_pm}`;
+  clock.innerHTML = `${hour}:${minute} : ${seconds} ${am_pm}`;
   document.querySelector(".day").innerHTML = currentDay;
   document.querySelector(".month").innerHTML = `${month}`;
   document.querySelector(".year").innerHTML = `${year}`;

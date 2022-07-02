@@ -6,7 +6,7 @@
   box-sizing: border-box;
 }
 body {
-  background-color: #464346;
+  // background-color: #464346;
 }
 .page-container {
   display: grid;
@@ -183,7 +183,43 @@ h2 {
   color: #fff;
 }
 h2::first-letter {
-  color: #f33c0a;
   color: #000;
+  color: rebeccapurple;
+  color: #f33c0a;
+  color: red;
+  color: #fff;
   font-size: 2rem;
+}
+label {
+  position: absolute;
+  width: 45px;
+  height: 22px;
+  right: 20px;
+  right: 20px;
+  border: 2px solid;
+  border-radius: 20px;
+  z-index: 100;
+  margin-top: 4rem;
+  margin-right: 4rem;
+}
+label::before {
+  position: absolute;
+  content: "";
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  z-index: 100;
+  left: 1px;
+  top: 1px;
+  cursor: pointer;
+  background-color: #000;
+  transition: 0.4s;
+}
+label.active::before {
+  left: 24px;
+  background-color: #fff;
+}
+body.night {
+  background-color: #000;
+  color: #fff;
 }

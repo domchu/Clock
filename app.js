@@ -6,7 +6,6 @@ const deg = 6;
 setInterval(() => {
   let currentDay = new Date();
   let currentHour = currentDay.getHours() * 30;
-  console.log(currentHour);
   let currentMin = currentDay.getMinutes() * deg;
   let currentSec = currentDay.getSeconds() * deg;
 
@@ -14,4 +13,13 @@ setInterval(() => {
   min.style.transform = `rotateZ(${currentMin}deg)`;
   sec.style.transform = `rotateZ(${currentSec}deg)`;
 }, 1000);
-// console.log(hour);
+
+// dark mode
+
+let content = document.querySelector("body")[0];
+let darkMode = document.querySelector(".dark-mode");
+
+darkMode.addEventListener("click", () => {
+  darkMode.classList.toggle("active");
+  content.classList.toggle("night");
+});
