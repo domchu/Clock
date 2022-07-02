@@ -5,13 +5,12 @@
   text-decoration: none;
   box-sizing: border-box;
 }
+body {
+  background-color: #464346;
+}
 .page-container {
   display: grid;
   place-items: center;
-  // display: flex;
-  // justify-content: center
-  // align-items: center;
-  // min-height: 100vh;
 
   .clock-outer {
     display: flex;
@@ -22,11 +21,11 @@
     margin: auto;
     align-items: center;
     text-align: center;
-    margin-top: 4rem;
-    border-bottom-right-radius: 40px;
-    border-bottom-left-radius: 20px;
-    border-top-left-radius: 40px;
-    border-top-right-radius: 20px;
+    border-radius: 50%;
+    // border-bottom-right-radius: 40px;
+    // border-bottom-left-radius: 20px;
+    // border-top-left-radius: 40px;
+    // border-top-right-radius: 20px;
 
     .clock {
       background-color: #fff;
@@ -154,7 +153,7 @@
   width: 400px;
   height: 100px;
   border-radius: 8px;
-  margin-top: 4rem;
+  // margin-top: 4rem;
 
   .clock-digital {
     font-size: 3rem;
@@ -171,14 +170,20 @@
   font-weight: bold;
   border-radius: 8px;
   display: flex;
-  margin-top: 4rem;
   justify-content: space-around;
   font-size: 2rem;
   color: #fff;
   background-color: rebeccapurple;
   align-items: center;
-
-  .month {
-    // margin: 0 2rem;
-  }
+}
+h2 {
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  text-decoration: underline;
+  color: #fff;
+}
+h2::first-letter {
+  color: #f33c0a;
+  color: #000;
+  font-size: 2rem;
 }
