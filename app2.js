@@ -56,4 +56,5 @@ setInterval(() => {
 
   clock.innerHTML = `${hour} : ${minute} : ${seconds} ${am_pm}`;
   document.querySelector(".day").innerHTML = currentDay;
+  document.querySelector(".year").innerHTML = year;
 }, 1000);
