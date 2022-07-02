@@ -9,7 +9,7 @@ setInterval(() => {
   let day = date.getDay();
   let month = date.getMonth();
   let year = date.getFullYear();
-  console.log(month);
+  // console.log(month);
 
   am_pm = hour >= 12 ? "PM" : "AM";
 
