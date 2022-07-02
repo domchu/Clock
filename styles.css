@@ -8,16 +8,9 @@
 }
 
 .page-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  min-height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
 }
 
 .page-container .clock-outer {
@@ -35,6 +28,7 @@
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
+  margin-top: 4rem;
   border-bottom-right-radius: 40px;
   border-bottom-left-radius: 20px;
   border-top-left-radius: 40px;
@@ -146,7 +140,7 @@
   position: absolute;
   left: 49%;
   top: 19%;
-  border-end-end-radius: 10px;
+  border-bottom-right-radius: 10px;
   -webkit-transform-origin: bottom;
           transform-origin: bottom;
 }
@@ -172,7 +166,7 @@
   z-index: 100;
   top: 50%;
   left: 47.5%;
-  border-radius: 50%;
+  border-radius: 100%;
 }
 
 .digital-time {
@@ -185,9 +179,13 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: rebeccapurple;
+  border: 1px solid;
   color: #fff;
-  text-align: center;
+  background-color: rebeccapurple;
+  width: 400px;
+  height: 100px;
+  border-radius: 8px;
+  margin-top: 4rem;
 }
 
 .digital-time .clock-digital {

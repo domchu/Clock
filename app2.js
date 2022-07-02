@@ -17,5 +17,9 @@ setInterval(() => {
     seconds = "0" + seconds;
   }
 
+  if (hour > 12) {
+    hour = hour - 12;
+  }
+
   clock.innerHTML = `${hour} : ${minute} : ${seconds} ${am_pm}`;
 }, 1000);

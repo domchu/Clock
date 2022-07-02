@@ -6,10 +6,12 @@
   box-sizing: border-box;
 }
 .page-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  // display: flex;
+  // justify-content: center
+  // align-items: center;
+  // min-height: 100vh;
 
   .clock-outer {
     display: flex;
@@ -20,6 +22,7 @@
     margin: auto;
     align-items: center;
     text-align: center;
+    margin-top: 4rem;
     border-bottom-right-radius: 40px;
     border-bottom-left-radius: 20px;
     border-top-left-radius: 40px;
@@ -116,7 +119,7 @@
     position: absolute;
     left: 49%;
     top: 19%;
-    border-end-end-radius: 10px;
+    border-bottom-right-radius: 10px;
     transform-origin: bottom;
   }
   .hour {
@@ -138,17 +141,20 @@
     z-index: 100;
     top: 50%;
     left: 47.5%;
-    border-radius: 50%;
+    border-radius: 100%;
   }
 }
 .digital-time {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rebeccapurple;
+  border: 1px solid;
   color: #fff;
-  // width: 400px;
-  text-align: center;
+  background-color: rebeccapurple;
+  width: 400px;
+  height: 100px;
+  border-radius: 8px;
+  margin-top: 4rem;
 
   .clock-digital {
     font-size: 3rem;
